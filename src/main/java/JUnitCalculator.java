@@ -3,9 +3,11 @@ public class JUnitCalculator {
         System.out.println("Hello World");
     }
 
-
     public int add(int x, int y) {
+        return x+y;
+    }
 
-        return 4;
+    public int division(int x, int y){
+        return x/y;
     }
 }

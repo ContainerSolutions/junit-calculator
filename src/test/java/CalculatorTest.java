@@ -19,7 +19,16 @@ public class CalculatorTest {
   @Test
   public void testSum() {
     assertEquals( 4 , jUnitCalculator.add(2,2) );
-    assertEquals(2,jUnitCalculator.add(3,4));
+    assertEquals(2,jUnitCalculator.add(1,1));
+    assertEquals(0,jUnitCalculator.add(-1,1));
+    assertEquals(-2,jUnitCalculator.add(-1,-1));
+  }
+
+  @Test
+  public void testDivision(){
+    assertEquals(4, jUnitCalculator.division(4, 1));
+    assertEquals(1, jUnitCalculator.division(1, 1));
+    assertEquals(0, jUnitCalculator.division(3, 4));
   }
 
 }
